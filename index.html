@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="./src/styles/newPost.css">
+  <link rel="stylesheet" href="./src/styles/followSugestion.css">
+  <link rel="stylesheet" href="./src/styles/posts.css">
 
-    <title>Criando rede social</title>
-  </head>
-  <body></body>
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Criando rede social</title>
+</head>
+
+<body>
+  <header>
+    <img src="./src/assets/img/logo.svg" alt="" srcset="">
+    <button class="logoutBtn">Sair</button>
+  </header>
+
+  <main class="main__container">
+
+    <div class="newPost__container">
+      <div class="user__container">
+        <img src="./src/assets/img/user1.svg" alt="">
+        <p class="username">Samuel Leão</p>
+        <span class="userInfo">Front end Engineer</span>
+      </div>
+
+      <input type="text" placeholder="Digitar título do post">
+      <textarea name="postDescription" id="" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+      <button type="submit" class="newPost__submitBtn">Postar</button>
+    </div>
+
+    <h3 class="follow__title">Sugestões para você seguir</h3>
+    <aside class="follow__container">
+      <div class="user__container">
+        <img src="./src/assets/img/user1.svg" alt="">
+        <p class="username">Samuel Leão</p>
+        <span class="userInfo">Front end Engineer</span>
+        <button class="followBtn">Seguir</button>
+      </div>
+      <div class="user__container">
+        <img src="./src/assets/img/user1.svg" alt="">
+        <p class="username">Samuel Leão</p>
+        <span class="userInfo">Front end Engineer</span>
+        <button class="followBtn">Seguir</button>
+      </div>
+    </aside>
+
+    <div class="posts__container">
+      <h2>Posts</h2>
+
+      <div class="post">
+        <div class="user__container">
+          <img src="./src/assets/img/user1.svg" alt="">
+          <p class="username">Samuel Leão</p>
+          <span class="userInfo">Front end Engineer</span>
+        </div>
+
+        <h2 class="post__title">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+        <p class="post__abstract">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design
+          pronto feito por um profissional de UI design.</p>
+          <div class="post__form-container">            
+            <button class="postModalBtn">Abrir Post</button>
+            <button class="likeBtn"> <img src="./src/assets/img/likeb.svg" alt=""></button>
+          </div>
+      </div>
+    </div>
+
+
+  </main>
+</body>
+
 </html>

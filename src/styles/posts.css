@@ -1,0 +1,49 @@
+.posts__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts__container > h2{
+    padding: 2rem 0;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post__title{
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    line-height: 150%;
+
+    text-align: start;
+}
+
+.post__abstract{
+    line-height: 150%;
+}
+
+.post__form-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.postModalBtn{
+    padding: .75rem;
+
+    background-color: var(--grey-700);
+    border-radius: 5px;
+
+    color: var(--whiteFixed);
+}
+
+.likeBtn{
+    background-color: transparent   ;
+}

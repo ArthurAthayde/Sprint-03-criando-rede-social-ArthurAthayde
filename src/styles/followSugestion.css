@@ -1,0 +1,47 @@
+.follow__container {
+    display: flex;
+    gap: 2rem;
+
+    overflow-x: scroll;
+
+    margin-top: 2rem;
+}
+
+.follow__title {
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+}
+
+.follow__container>.user__container {
+    justify-content: start;
+
+    min-width: 11.25rem;
+
+    height: 6rem;
+
+}
+
+.follow__container>.user__container>img {
+    top: 0;
+}
+
+.follow__container>.user__container>button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.followBtn {
+    background-color: transparent;
+
+    border: solid 1px var(--grey-900);
+    border-radius: 3px;
+
+    color: var(--grey-900);
+    font-weight: 600;
+
+    padding: .4rem .75rem;
+
+    font-size: .9rem;
+}
