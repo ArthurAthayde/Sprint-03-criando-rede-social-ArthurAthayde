@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./src/styles/newPost.css">
   <link rel="stylesheet" href="./src/styles/followSugestion.css">
   <link rel="stylesheet" href="./src/styles/posts.css">
+  <link rel="stylesheet" href="./src/styles/modal.css">
 
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,43 +45,20 @@
     </div>
 
     <h3 class="follow__title">Sugestões para você seguir</h3>
-    <aside class="follow__container">
-      <div class="user__container">
-        <img src="./src/assets/img/user1.svg" alt="">
-        <p class="username">Samuel Leão</p>
-        <span class="userInfo">Front end Engineer</span>
-        <button class="followBtn">Seguir</button>
-      </div>
-      <div class="user__container">
-        <img src="./src/assets/img/user1.svg" alt="">
-        <p class="username">Samuel Leão</p>
-        <span class="userInfo">Front end Engineer</span>
-        <button class="followBtn">Seguir</button>
-      </div>
-    </aside>
+    <ul class="follow__container"></ul>
 
-    <div class="posts__container">
+    <ul class="posts__container">
       <h2>Posts</h2>
 
-      <div class="post">
-        <div class="user__container">
-          <img src="./src/assets/img/user1.svg" alt="">
-          <p class="username">Samuel Leão</p>
-          <span class="userInfo">Front end Engineer</span>
-        </div>
+    </ul>
 
-        <h2 class="post__title">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
-        <p class="post__abstract">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design
-          pronto feito por um profissional de UI design.</p>
-          <div class="post__form-container">            
-            <button class="postModalBtn">Abrir Post</button>
-            <button class="likeBtn"> <img src="./src/assets/img/likeb.svg" alt=""></button>
-          </div>
-      </div>
-    </div>
-
+    <dialog class="modal__container"> 
+    </dialog>
 
   </main>
+
+  <script type="module" src="./src/scripts/database.js"></script>
+  <script type="module" src="./src/scripts/index.js"></script>
 </body>
 
 </html>

@@ -45,3 +45,54 @@
 
     font-size: .9rem;
 }
+
+.followedBtn{
+    color: var(--whiteFixed);
+
+    background-color: var(--blue-500);
+    
+    border: solid 1px var(--blue-500);
+    border-radius: 3px;
+
+    font-weight: 600;
+
+    padding: .4rem .75rem;
+
+    font-size: .9rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media (min-width: 769px){
+    .follow__title{
+        position: absolute;
+        right: 21rem;
+        top: 6.5rem;
+    }
+
+    .follow__container{
+        position: absolute;
+        right: 5rem;
+        top: 9rem;
+
+        gap: 0;
+
+        flex-direction: column;
+    }
+
+    .follow__container>.user__container>button {
+        position: absolute;
+        bottom: 65%;
+        left: 20rem;
+
+        align-self: flex-end;
+        width: 7rem;
+    }
+
+    .user__container{
+        width: 30rem;
+    }
+}

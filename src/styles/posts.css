@@ -1,10 +1,15 @@
 .posts__container {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+
+    width: 95%;
+
+    margin: 0 auto;
 }
 
 .posts__container > h2{
-    padding: 2rem 0;
+    padding: 3rem 0 1rem 0;
 
     font-size: 1.25rem;
     font-weight: 700;
@@ -28,6 +33,8 @@
 
 .post__abstract{
     line-height: 150%;
+
+    text-align: justify;
 }
 
 .post__form-container{
@@ -46,4 +53,14 @@
 
 .likeBtn{
     background-color: transparent   ;
+}
+
+@media (min-width: 769px){
+    .posts__container{
+        width: 50%;
+
+        margin: 0;
+
+        gap: 3rem;
+    }
 }

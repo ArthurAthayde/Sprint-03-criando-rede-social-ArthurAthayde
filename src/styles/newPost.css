@@ -77,3 +77,23 @@
 
     background-color: var(--grey-200);
 }
+
+
+@media (min-width: 769px){
+
+    main{
+        padding: 0 10%;
+    }
+
+    .newPost__container{
+        width: 50%;
+
+        align-self: flex-start;
+    }
+
+    .newPost__submitBtn{
+        background-color: var(--blue-500);
+
+        color: var(--whiteFixed);
+    }
+}
