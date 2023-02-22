@@ -11,7 +11,7 @@ export function createPost(post){
     const postAbstract = document.createElement('p');
     const postForm = document.createElement('div');
     const openModalBtn = document.createElement('button');
-    const likeBtn = document.createElement('button');
+    const likeBtn = document.createElement('img');
     const likeCont = document.createElement('span');
 
     postLi.classList.add('post');
@@ -39,7 +39,7 @@ export function createPost(post){
     openModalBtn.dataset.postId = post.id;
 
     likeBtn.classList.add('likeBtn');
-    likeBtn.img = "../src/assets/img/likeb.svg";
+    likeBtn.src = "../src/assets/img/likeb.svg";
 
     likeCont.classList.add('like__cont');
     likeCont.innerText = post.likes;

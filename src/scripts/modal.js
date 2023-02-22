@@ -56,7 +56,9 @@ export function renderModal(array) {
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            const mondalContent = createModal(button.dataset.postId, posts);
+
+            modal.innerHTML = ""
+            const mondalContent = createModal(button.dataset.postId, array);
 
             modal.appendChild(mondalContent);
             modal.showModal();
