@@ -39,7 +39,7 @@ export function createPost(post){
     openModalBtn.dataset.postId = post.id;
 
     likeBtn.classList.add('likeBtn');
-    likeBtn.src = "../src/assets/img/likeb.svg";
+    likeBtn.src = "../../src/assets/img/likeb.svg";
 
     likeCont.classList.add('like__cont');
     likeCont.innerText = post.likes;

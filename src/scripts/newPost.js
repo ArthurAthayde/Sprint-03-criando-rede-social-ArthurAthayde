@@ -22,6 +22,7 @@ function newPost(array) {
         alert('Favor preencher todos os campos.')
     }
 
+    
     array.push(post);
 }
 
